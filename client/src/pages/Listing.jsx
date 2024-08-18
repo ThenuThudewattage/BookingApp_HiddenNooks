@@ -51,6 +51,7 @@ export default function Listing() {
   }, [params.listingId]);
 
   return (
+    <div className='listing'>
     <main>
       {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
       {error && (
@@ -143,7 +144,7 @@ export default function Listing() {
                 <button onClick={()=>
                     setContact(true)
                 } className='bg-slate-700 text-white rounded-lg uppercase hover:opacity-95
-            p-3 '>Contact landlord</button>
+            p-3 '>Contact Hotel</button>
             )}
 
             {contact && <Contact listing = {listing} />}
@@ -152,5 +153,6 @@ export default function Listing() {
         </div>
       )}
     </main>
+    </div>
   );
 }

@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 body{
-    background-color: rgb(241,245,241);
+    background-color: #2F4F4F;
+}
+
+.listing{
+    background-color: rgb(250, 247, 242);
+}
+
+.container img{
+    height: 10vh;
+    width: 10vh;
 }

@@ -11,7 +11,7 @@ export default function Home() {
   const [saleListings, setSaleListings] = useState([]);
   const [rentListings, setRentListings] = useState([]);
   SwiperCore.use([Navigation]);
-  console.log(offerListings);
+  //console.log(offerListings);
 
   useEffect(() => {
     const fetchOfferListings = async () => {
@@ -53,17 +53,18 @@ export default function Home() {
     <div>
       {/* top */}
         <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto"> 
-          <h1 className='text-slate-700 font-bold 
-          text-3xl lg:text-4xl'>Find the <span className='text-slate-500'>perfect</span> place to stay</h1>
+          <h1 className='text-slate-50 font-bold 
+          text-3xl lg:text-4xl'>Find Your Next Adventure, Anytime, Anywhere</h1>
 
           <div className='text-gray-400 text-xs sm:text-m '>
-            HiddenNooks is the perfect place to find your ideal vacation <br />
-            Hidden in the most beautiful places in across sri lanka, 
-            you can find the perfect place to stay.
+            Welcome to Hidden Nooks, where your next adventure is just a click away. 
+            Whether it’s a quick getaway or a dream vacation, we make booking easy and stress-free. 
+            <br/>Explore unique destinations, find the perfect stay, and let us help you create unforgettable memories. 
+            Start your journey with Hidden Nooks today.
           </div>
 
           <Link to ={"/search"} className='text-xs sm:text-sm
-          text-blue-800 font-bold hover:underline'>Let's get started!</Link>
+          text-blue-400 font-bold hover:underline'>Book Now...</Link>
         </div>
 
       {/* swiper */}
@@ -88,8 +89,8 @@ export default function Home() {
           <div>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold 
-              text-slate-600'>Recent Offers</h2>
-              <Link className='text-sm text-blue-800 hover:underline' to ={'/search?offer=true'}>
+              text-slate-50'>Recent Offers</h2>
+              <Link className='text-sm text-blue-400 hover:underline' to ={'/search?offer=true'}>
                 Show more offers 
               </Link>
             </div>
@@ -106,9 +107,9 @@ export default function Home() {
           <div>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold 
-              text-slate-600'>Recent places for Rent</h2>
-              <Link className='text-sm text-blue-800 hover:underline' to ={'/search?type=rent'}>
-                Show more places for rent
+              text-slate-50'>Recent Hotels for Rent</h2>
+              <Link className='text-sm text-blue-400 hover:underline' to ={'/search?type=rent'}>
+                Show more places
               </Link>
             </div>
             <div className='flex flex-wrap gap-8'>
@@ -124,9 +125,9 @@ export default function Home() {
           <div>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold 
-              text-slate-600'>Recent Sales</h2>
-              <Link className='text-sm text-blue-800 hover:underline' to ={'/search?type=sale'}>
-                Show more places for sale 
+              text-slate-50'>Recent Home & Apartments for Rent</h2>
+              <Link className='text-sm text-blue-400 hover:underline' to ={'/search?type=sale'}>
+                Show more places 
               </Link>
             </div>
             <div className='flex flex-wrap gap-8'>

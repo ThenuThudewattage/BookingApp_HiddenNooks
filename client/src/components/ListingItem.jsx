@@ -24,7 +24,7 @@ export default function ListingItem({listing}) {
           text-gray-600 line-clamp-2'>{listing.description}</p>
           <p className='text-slate-500 mt-2 font-semibold '>
             ${listing.offer ? listing.discountPrice.toLocaleString('en-US') : listing.regularPrice.toLocaleString('en-US')}
-            {listing.type === 'rent' && ' / month'}</p>
+            {listing.type === 'rent' && ' / day'}</p>
 
             <div className='text-slate-700 flex gap-4 '>
               <div className='font-bold text-xs'>
