@@ -10,6 +10,10 @@ body{
     background-color: rgb(250, 247, 242);
 }
 
+.search{
+    background-color: rgb(250, 247, 242);
+}
+
 .container img{
     height: 10vh;
     width: 10vh;
